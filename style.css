@@ -113,22 +113,30 @@ img {
 
 /* Character profile styles */
 .character-profile {
-  border: 2px solid #333333;
+  border: 3px solid #333333;
   padding: 20px;
   margin-bottom: 20px;
   border-radius: 8px;
-  background-color: #f9f9f9;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(135deg, #f9f9f9, #e2e2e2);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.character-profile:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .character-profile h3 {
-  color: #444444;
+  color: #333333;
   margin-bottom: 10px;
+  font-size: 24px;
 }
 
 .character-profile p {
-  color: #666666;
+  color: #555555;
   line-height: 1.6;
+  font-size: 16px;
 }
 
 /* Social media styles (not currently used) */
