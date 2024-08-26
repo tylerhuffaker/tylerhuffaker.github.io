@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('img/bgimage1.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    font-family: 'Righteous', system-ui;
+}
+
+.container {
+    text-align: center;
+}
+
+.enter-button {
+    background-color: #ff4500;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    font-family: 'Righteous', system-ui;
+}
+
+.enter-button:hover {
+    background-color: #ff6347;
+    transform: scale(1.05);
+}
+
+.enter-button:active {
+    background-color: #ff6347;
+    transform: scale(1);
+}
