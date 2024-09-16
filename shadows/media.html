@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/media.css">
+  <title>Shadows of Anarchy Media</title>
+  <style>
+   
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Game Media</h2>
+    <p>Explore the world of Shadows of Anarchy through our media gallery. Here you'll find concept art, screenshots, and more.</p>
+    <p>Disclaimer: All images represent a game in development and are not final images</p>
+    <button class="back-button" onclick="location.href='landing.html'">Back to Landing Page</button>
+    <br>
+    <div class="image-box">
+        <img id="mediaImage" src="styles/img/DB4UI.png" alt="Nathan Morgan">
+        <div class="description" id="imageDescription"><b>Games HUD</b> HUD as of DEV BUILD 4 (Prior to addition of inventory)</div>
+        <div class="buttons">
+          <button onclick="showImage(1)">Game HUD</button>
+          <button onclick="showImage(2)">Santiago Mendoza</button>
+          <button onclick="showImage(3)">Nathan Morgan</button>
+        </div>
+      </div>
+    </div>
+  
+    <script>
+      const images = [
+        { src: 'styles/img/DB4UI.png', description: '<b>Games HUD</b> HUD as of DEV BUILD 4 (Prior to addition of inventory)' },
+        { src: 'styles/img/Antag-01.png', description: '<b>Santiago Mendoza</b> The ruthless leader of the syndicate' },
+        { src: 'styles/img/Main02.png', description: '<b>Nathan Morgan</b> The main character who you assume control of.' }
+      ];
+  
+      function showImage(index) {
+        const image = images[index - 1];
+        document.getElementById('mediaImage').src = image.src;
+        document.getElementById('imageDescription').innerHTML = image.description;
+      }
+    </script>
+</body>
+</html>
